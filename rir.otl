@@ -1,0 +1,8 @@
+Refactoring in Ruby: Exercise Book
+	Chapter 2
+		Exercise 1
+			A. Justify each of Beck's rules for simple design.
+				1. Passes all the tests
+				2. Communciates every intention important to the programmers
+				3. Has no duplication of code, or logic, or of knowledge.
+				4. Contains no unnecessary code
