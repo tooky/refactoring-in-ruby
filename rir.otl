@@ -1,8 +1,40 @@
 Refactoring in Ruby: Exercise Book
 	Chapter 2
-		Exercise 1
+		Exercise 2.1
 			A. Justify each of Beck's rules for simple design.
-				1. Passes all the tests
-				2. Communciates every intention important to the programmers
+				1. Passes all the tests.
+					| Code must pass all the tests, this guarantees that the code fulfils the
+					| specification of the system, to the best of the programmers current
+					| knowledge.
+				2. Communciates every intention important to the programmers.
+					| If the code communicates all of the programmers intention it will not need
+					| to commented. It will make it easier for another programmer (or the same
+					| programmer!) to return to the code later and understand what the original
+					| intent of the code was.
 				3. Has no duplication of code, or logic, or of knowledge.
-				4. Contains no unnecessary code
+					| Duplication is dangerous, duplication means that any change in one place,
+					| will also need to be duplicated in the other place else bugs will start to
+					| creep in.
+				4. Contains no unnecessary code.
+					| Unnecessary code adds to the burden on the programmers. There is code that
+					| they will need to read and understand before they can determine whether
+					| the code is used or not. It adds complexity without adding anything to the
+					| system.
+			B. Why are these rules in priority order? Can you find an example where communication
+			   overrides avoidance of duplication.
+				| The tests are most important because they embody all of the knowledge
+				| about what the system should do, as long as they pass the system works.
+				| 
+				| The code needs to embody the intent of the programmers as code is read
+				| more often than it is written. Coming back to code later and trying to
+				| understand what it is doing is difficult, and clearly communicated code
+				| makes this easier.
+				|
+				| Providing duplication doesn't express intent better (particularly
+				| important for tests as they provide a specification for the systems'
+				| behaviour) then it should be removed as it can make it easy to introduce
+				| bugs.
+				|
+				| As stated above unused code doesn't add anything to the system but
+				| introduces complexity as the code needs to be understood before a
+				| programmer can decide that its unnecessary.
